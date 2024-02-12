@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tablero de Ejercicios de Matemáticas</title>
+  <link rel="stylesheet" href="estilo.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="container">
+        <a class="btn btn-outline-secondary mb-2" href="index.html" role="button">Regresar</a>
+        <button id="reiniciarBtn" class="btn btn-outline-info mb-2" type="button">Reiniciar</button>
+
+          <br>
+          <BR>
+
+    <!-- Problema 1 -->
+    <div class="problem" id="problem1">
+    <p>Problema de cuarto grado 1: Resolver la siguiente operación : 67 * 29</p>
+    <button onclick="mostrarEjemplo('Ejemplo: Multiplicar dos números enteros')">
+      Ver Ejemplo
+    </button>
+    <ul class="options" id="options1">
+      <li class="option" onclick="verificarRespuesta(this, false, 1)">A) 1958</li>
+      <li class="option" onclick="verificarRespuesta(this, true, 1)">B) 1943</li>
+      <li class="option" onclick="verificarRespuesta(this, false, 1)">C) 2035</li>
+      <li class="option" onclick="verificarRespuesta(this, false, 1)">D) 1980</li>
+    </ul>
+  </div>
+  
+  <!-- Problema 2 -->
+  <div class="problem" id="problem2">
+    <p>Problema de cuarto grado 2: Calcular el área de un triángulo con base 12 cm y altura 15 cm.</p>
+    <button onclick="mostrarEjemplo('Ejemplo: Área del triángulo = (base * altura) / 2')">
+      Ver Ejemplo
+    </button>
+    <ul class="options" id="options2">
+      <li class="option" onclick="verificarRespuesta(this, false, 2)">A) 80 cm²</li>
+      <li class="option" onclick="verificarRespuesta(this, false, 2)">B) 100 cm²</li>
+      <li class="option" onclick="verificarRespuesta(this, true, 2)">C) 90 cm²</li>
+      <li class="option" onclick="verificarRespuesta(this, false, 2)">D) 120 cm²</li>
+    </ul>
+  </div>
+  
+  <!-- Problema 3 -->
+  <div class="problem" id="problem3">
+    <p>Problema de cuarto grado 3: Resolver la siguiente operación:</p>
+    <p>125 ÷ 5</p>
+    <button onclick="mostrarEjemplo('Ejemplo: Dividir dos números enteros')">
+      Ver Ejemplo
+    </button>
+    <ul class="options" id="options3">
+      <li class="option" onclick="verificarRespuesta(this, false, 3)">A) 25</li>
+      <li class="option" onclick="verificarRespuesta(this, true, 3)">B) 5</li>
+      <li class="option" onclick="verificarRespuesta(this, false, 3)">C) 20</li>
+      <li class="option" onclick="verificarRespuesta(this, false, 3)">D) 15</li>
+    </ul>
+  </div>
+  
+  <!-- Problema 4 -->
+  <div class="problem" id="problem4">
+    <p>Problema de cuarto grado 4: Calcular el perímetro de un cuadrado con lado 9 cm.</p>
+    <button onclick="mostrarEjemplo('Ejemplo: Perímetro del cuadrado = 4 * lado')">
+      Ver Ejemplo
+    </button>
+    <ul class="options"id="options4">
+      <li class="option" onclick="verificarRespuesta(this, false, 4)">A) 36 cm</li>
+      <li class="option" onclick="verificarRespuesta(this, false, 4)">B) 45 cm</li>
+      <li class="option" onclick="verificarRespuesta(this, true, 4)">C) 36 cm</li>
+      <li class="option" onclick="verificarRespuesta(this, false, 4)">D) 81 cm</li>
+    </ul>
+  </div>
+  
+  <!-- Problema 5 -->
+  <div class="problem" id="problem5">
+    <p>Problema de cuarto grado 5: Encuentra el valor de x en la ecuación 3x + 8 = 20.</p>
+    <button onclick="mostrarEjemplo('Ejemplo: Despejar x en la ecuación lineal(2x + 10 = 18), (2x = 18 - 10), (2x = 8), (x = 8 / 2), (x = 4)')">
+      Ver Ejemplo
+    </button>
+    <ul class="options" id="options5">
+      <li class="option" onclick="verificarRespuesta(this, false, 5)">A) 8</li>
+      <li class="option" onclick="verificarRespuesta(this, true, 5)">B) 4</li>
+      <li class="option" onclick="verificarRespuesta(this, false, 5)">C) 5</li>
+      <li class="option" onclick="verificarRespuesta(this, false, 5)">D) 6</li>
+    </ul>
+  </div>
+  
+  <!-- Problema 6 -->
+  <div class="problem" id="problem6">
+    <p>Problema de cuarto grado 6: Calcula el área de un rectángulo con base 7 cm y altura 12 cm.</p>
+    <button onclick="mostrarEjemplo('Ejemplo: Área del rectángulo = base * altura')">
+      Ver Ejemplo
+    </button>
+    <ul class="options" id="options6">
+      <li class="option" onclick="verificarRespuesta(this, false, 6)">A) 72 cm²</li>
+      <li class="option" onclick="verificarRespuesta(this, true, 6)">B) 84 cm²</li>
+      <li class="option" onclick="verificarRespuesta(this, false, 6)">C) 96 cm²</li>
+      <li class="option" onclick="verificarRespuesta(this, false, 6)">D) 70 cm²</li>
+    </ul>
+  </div>
+  
+  <!-- Problema 7 -->
+  <div class="problem" id="problem7">
+    <p>Problema de cuarto grado 7: Resuelve la siguiente operación con decimales:</p>
+    <p>5.75 * 3.2</p>
+    <button onclick="mostrarEjemplo('Ejemplo: Multiplicar dos números decimales 485 x 27 = 13145, para hacer la multipliacion se le quita las comas y se multiplican  y asi queda la respuestas(13.145)')">
+      Ver Ejemplo
+    </button>
+    <ul class="options" id="options7" >
+      <li class="option" onclick="verificarRespuesta(this, false, 7)">A) 19.4</li>
+      <li class="option" onclick="verificarRespuesta(this, false, 7)">B) 16.5</li>
+      <li class="option" onclick="verificarRespuesta(this, false, 7)">C) 14.6</li>
+      <li class="option" onclick="verificarRespuesta(this, true, 7)">D) 18.4</li>
+    </ul>
+  </div>
+  
+  <!-- Problema 8 -->
+  <div class="problem" id="problem8">
+    <p>Problema de cuarto grado 8: Simplifica la fracción 24/36.</p>
+    <button onclick="mostrarEjemplo('Ejemplo: Simplificar dividiendo el numerador y denominador por su máximo común divisor (45/60 es 45 ÷ 15 = 3 / 60 ÷ 15 = 4 = 3/4    )')">
+      Ver Ejemplo
+    </button>
+    <ul class="options"  id="options8">
+      <li class="option" onclick="verificarRespuesta(this, false, 8)">A) 2/3</li>
+      <li class="option" onclick="verificarRespuesta(this, false, 8)">B) 3/4</li>
+      <li class="option" onclick="verificarRespuesta(this, false, 8)">C) 4/5</li>
+      <li class="option" onclick="verificarRespuesta(this, true, 8)">D) 2/3</li>
+    </ul>
+  </div>
+  
+  <!-- Problema 9 -->
+  <div class="problem" id="problem9">
+    <p>Problema de cuarto grado 9: Halla el resultado de la siguiente operación:</p>
+    <p>95 - (3 * 7)</p>
+    <button onclick="mostrarEjemplo('Ejemplo: Aplicar la jerarquía de operaciones')">
+      Ver Ejemplo
+    </button>
+    <ul class="options" id="options9">
+      <li class="option" onclick="verificarRespuesta(this, false, 9)">A) 76</li>
+      <li class="option" onclick="verificarRespuesta(this, false, 9)">B) 82</li>
+      <li class="option" onclick="verificarRespuesta(this, true, 9)">C) 74</li>
+      <li class="option" onclick="verificarRespuesta(this, false, 9)">D) 89</li>
+    </ul>
+  </div>
+  
+  <!-- Problema 10 -->
+  <div class="problem" id="problem10">
+    <p>Problema de cuarto grado 10: Resuelve la ecuación 2x - 5 = 11.</p>
+    <button onclick="mostrarEjemplo('Ejemplo: Despejar x en la ecuación lineal')">
+      Ver Ejemplo
+    </button>
+    <ul class="options" id="options10">
+      <li class="option" onclick="verificarRespuesta(this, false, 10)">A) 7</li>
+      <li class="option" onclick="verificarRespuesta(this, true, 10)">B) 8</li>
+      <li class="option" onclick="verificarRespuesta(this, false, 10)">C) 9</li>
+      <li class="option" onclick="verificarRespuesta(this, false, 10)">D) 10</li>
+    </ul>
+  </div>
+  
+  <!-- Problema 11 -->
+  <div class="problem" id="problem11">
+    <p>Problema de cuarto grado 11: Encuentra el valor de x en la siguiente ecuación:</p>
+    <p>4x + 7 = 23</p>
+    <button onclick="mostrarEjemplo('Ejemplo: Despejar x en la ecuación lineal')">
+      Ver Ejemplo
+    </button>
+    <ul class="options" id="options11">
+      <li class="option" onclick="verificarRespuesta(this, true, 11)">A) 4</li>
+      <li class="option" onclick="verificarRespuesta(this, false, 11)">B) 5</li>
+      <li class="option" onclick="verificarRespuesta(this, false, 11)">C) 6</li>
+      <li class="option" onclick="verificarRespuesta(this, false, 11)">D) 7</li>
+    </ul>
+  </div>
+  
+  <!-- Problema 12 -->
+  <div class="problem" id="problem12">
+    <p>Problema de cuarto grado 12: Calcula el resultado de la siguiente operación:</p>
+    <p>(18 - 5) * 3</p>
+    <button onclick="mostrarEjemplo('Ejemplo: Aplicar la jerarquía de operaciones')">
+      Ver Ejemplo
+    </button>
+    <ul class="options" id="options12" >
+      <li class="option" onclick="verificarRespuesta(this, false, 12)">A) 51</li>
+      <li class="option" onclick="verificarRespuesta(this, false, 12)">B) 57</li>
+      <li class="option" onclick="verificarRespuesta(this, false, 12)">C) 63</li>
+      <li class="option" onclick="verificarRespuesta(this, true, 12)">D) 39</li>
+    </ul>
+  </div>
+  
+  <!-- Problema 13 -->
+  <div class="problem" id="problem13">
+    <p>Problema de cuarto grado 13: Calcula el área de un triángulo con base 16 cm y altura 8 cm.</p>
+    <button onclick="mostrarEjemplo('Ejemplo: Área del triángulo = (base * altura) / 2')">
+      Ver Ejemplo
+    </button>
+    <ul class="options"  id="options13">
+      <li class="option" onclick="verificarRespuesta(this, false, 13)">A) 112 cm²</li>
+      <li class="option" onclick="verificarRespuesta(this, false, 13)">B) 120 cm²</li>
+      <li class="option" onclick="verificarRespuesta(this, true, 13)">C) 64 cm²</li>
+      <li class="option" onclick="verificarRespuesta(this, false, 13)">D) 80 cm²</li>
+    </ul>
+  </div>
+  
+  <!-- Problema 14 -->
+  <div class="problem" id="problem14">
+    <p>Problema de cuarto grado 14: Resuelve la siguiente operación:</p>
+    <p>(9 + 4) * (6 - 3)</p>
+    <button onclick="mostrarEjemplo('Ejemplo: Aplicar la jerarquía de operaciones')">
+      Ver Ejemplo
+    </button>
+    <ul class="options"  id="options14">
+      <li class="option" onclick="verificarRespuesta(this, false, 14)">A) 33</li>
+      <li class="option" onclick="verificarRespuesta(this, false, 14)">B) 45</li>
+      <li class="option" onclick="verificarRespuesta(this, false, 14)">C) 54</li>
+      <li class="option" onclick="verificarRespuesta(this, true, 14)">D) 39</li>
+    </ul>
+  </div>
+  
+  <!-- Problema 15 -->
+  <div class="problem" id="problem15">
+    <p>Problema de cuarto grado 15: Encuentra el resultado de la siguiente operación con decimales:</p>
+    <p>3.75 + 2.5</p>
+    <button onclick="mostrarEjemplo('Ejemplo: Sumar dos números decimales')">
+      Ver Ejemplo
+    </button>
+    <ul class="options" id="options15">
+      <li class="option" onclick="verificarRespuesta(this, false, 15)">A) 4.25</li>
+      <li class="option" onclick="verificarRespuesta(this, false, 15)">B) 5.25</li>
+      <li class="option" onclick="verificarRespuesta(this, true, 15)">C) 6.25</li>
+      <li class="option" onclick="verificarRespuesta(this, false, 15)">D) 7.25</li>
+    </ul>
+  </div>
+  <div id="calificacion" style="display: none;">
+    <h2>Calificación: <span id="puntuacion"></span></h2>
+  </div>
+    </div>
+          <br>
+
+          <br>
+          <br>
+
+  <script src="java.js"></script>
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tablero de Ejercicios de Matemáticas</title>
+  <link rel="stylesheet" href="estilo.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+<body>
+
+    <div class="container">
+        <a class="btn btn-outline-secondary mb-2" href="index.html" role="button">Regresar</a>
+        <button id="reiniciarBtn" class="btn btn-outline-info mb-2" type="button">Reiniciar</button>
+
+          <br>
+          <BR>
+                <!-- Problema 1 -->
+    <div class="problem" id="problem1">
+        <p>Problema de quinto grado 1: Resuelve la siguiente operación con decimales:</p>
+        <p>8.45 * 6.2</p>
+        <button onclick="mostrarEjemplo('Ejemplo: Multiplicar dos números decimales')">
+          Ver Ejemplo
+        </button>
+        <ul class="options" id="options1">
+          <li class="option" onclick="verificarRespuesta(this, false , 1)">A) 52.39</li>
+          <li class="option" onclick="verificarRespuesta(this, false, 1)">B) 47.3</li>
+          <li class="option" onclick="verificarRespuesta(this, false, 1)">C) 42.34</li>
+          <li class="option" onclick="verificarRespuesta(this, true, 1)">D) 52.39</li>
+        </ul>
+      </div>
+  
+      <!-- Problema 2 -->
+      <div class="problem" id="problem2">
+        <p>Problema de quinto grado 2: Simplifica la siguiente fracción:</p>
+        <p>18/24</p>
+        <button onclick="mostrarEjemplo('Ejemplo: Simplificar dividiendo el numerador y denominador por su máximo común divisor')">
+          Ver Ejemplo
+        </button>
+        <ul class="options" id="options2">
+          <li class="option" onclick="verificarRespuesta(this, false, 2)">A) 2/3</li>
+          <li class="option" onclick="verificarRespuesta(this, false, 2)">B) 4/5</li>
+          <li class="option" onclick="verificarRespuesta(this, true, 2)">C) 3/4</li>
+          <li class="option" onclick="verificarRespuesta(this, false, 2)">C) 3/2</li>
+        </ul>
+      </div>
+  
+      <!-- Problema 3 -->
+      <div class="problem" id="problem3">
+        <p>Problema de quinto grado 3: Resuelve la siguiente ecuación:</p>
+        <p>2x + 15 = 35</p>
+        <button onclick="mostrarEjemplo('Ejemplo: Despejar x en la ecuación lineal')">
+          Ver Ejemplo
+        </button>
+        <ul class="options" id="options3">
+          <li class="option" onclick="verificarRespuesta(this, true, 3)">A) 10</li>
+          <li class="option" onclick="verificarRespuesta(this, false, 3)">B) 12</li>
+          <li class="option" onclick="verificarRespuesta(this, false, 3)">C) 8</li>
+          <li class="option" onclick="verificarRespuesta(this, false, 3)">D) 15</li>
+        </ul>
+      </div>
+  
+      <!-- Problema 4 -->
+      <div class="problem" id="problem4">
+        <p>Problema de quinto grado 4: Calcula el área de un círculo con radio 5 cm (usa π = 3.14).</p>
+        <button onclick="mostrarEjemplo('Ejemplo: Área del círculo = π * radio^2  (area = π x radio^2 /area = 3.14 x 6^2 / area = 3.14 x 36 = area 113.04 cm^2) ')">
+          Ver Ejemplo
+        </button>
+        <ul class="options" id="options4">
+          <li class="option" onclick="verificarRespuesta(this, false, 4)">A) 79.5 cm²</li>
+          <li class="option" onclick="verificarRespuesta(this, true, 4)">B) 78.5 cm²</li>
+          <li class="option" onclick="verificarRespuesta(this, false, 4)">C) 71 cm²</li>
+          <li class="option" onclick="verificarRespuesta(this, false, 4)">D) 75.5 cm²</li>
+        </ul>
+      </div>
+  
+      <!-- Problema 5 -->
+      <div class="problem"id="problem5">
+        <p>Problema de quinto grado 5: Encuentra el resultado de la siguiente operación:</p>
+        <p>(15 + 8) * 4</p>
+        <button onclick="mostrarEjemplo('Ejemplo: Aplicar la jerarquía de operaciones ')">
+          Ver Ejemplo
+        </button>
+        <ul class="options" id="options5">
+          <li class="option" onclick="verificarRespuesta(this, false, 5)">A) 98</li>
+          <li class="option" onclick="verificarRespuesta(this, false, 5)">B) 95</li>
+          <li class="option" onclick="verificarRespuesta(this, true, 5)">C) 92</li>
+          <li class="option" onclick="verificarRespuesta(this, false, 5)">D) 100</li>
+        </ul>
+      </div>
+  
+      <!-- Problema 6 -->
+      <div class="problem" id="problem6">
+        <p>Problema de quinto grado 6: Resuelve la siguiente operación con decimales:</p>
+        <p>9.6 + 3.75</p>
+        <button onclick="mostrarEjemplo('Ejemplo: Sumar dos números decimales')">
+          Ver Ejemplo
+        </button>
+        <ul class="options" id="options6">
+          <li class="option" onclick="verificarRespuesta(this, false, 6)">A) 13.45</li>
+          <li class="option" onclick="verificarRespuesta(this, true, 6)">B) 13.35</li>
+          <li class="option" onclick="verificarRespuesta(this, false, 6)">C) 12.85</li>
+          <li class="option" onclick="verificarRespuesta(this, false, 6)">D) 14.2</li>
+        </ul>
+      </div>
+  
+      <!-- Problema 7 -->
+      <div class="problem" id="problem7">
+        <p>Problema de quinto grado 7: Calcula el perímetro de un rectángulo con lados de 9 cm y 14 cm.</p>
+        <button onclick="mostrarEjemplo('Ejemplo: Perímetro del rectángulo = 2 * (lado1 + lado2)')">
+          Ver Ejemplo
+        </button>
+        <ul class="options" id="options7">
+          <li class="option" onclick="verificarRespuesta(this, false, 7)">A) 28 cm</li>
+          <li class="option" onclick="verificarRespuesta(this, false, 7)">B) 36 cm</li>
+          <li class="option" onclick="verificarRespuesta(this, true, 7)">C) 46 cm</li>
+          <li class="option" onclick="verificarRespuesta(this, false, 7)">D) 56 cm</li>
+        </ul>
+      </div>
+  
+      <!-- Problema 8 -->
+      <div class="problem" id="problem8">
+        <p>Problema de quinto grado 8: Encuentra el valor de x en la siguiente ecuación:</p>
+        <p>3x - 10 = 25</p>
+        <button onclick="mostrarEjemplo('Ejemplo: Despejar x en la ecuación lineal')">
+          Ver Ejemplo
+        </button>
+        <ul class="options" id="options8">
+          <li class="option" onclick="verificarRespuesta(this, false, 8)">A) 13</li>
+          <li class="option" onclick="verificarRespuesta(this, false, 8)">B) 19</li>
+          <li class="option" onclick="verificarRespuesta(this, false, 8)">C) 10</li>
+          <li class="option" onclick="verificarRespuesta(this, true, 8)">D) 15</li>
+        </ul>
+      </div>
+  
+      <!-- Problema 9 -->
+      <div class="problem" id="problem9">
+        <p>Problema de quinto grado 9: Resuelve la siguiente operación con decimales:</p>
+        <p>7.25 - 3.6</p>
+        <button onclick="mostrarEjemplo('Ejemplo: Restar dos números decimales')">
+          Ver Ejemplo
+        </button>
+        <ul class="options" id="options9">
+          <li class="option" onclick="verificarRespuesta(this, false, 9)">A) 3.45</li>
+          <li class="option" onclick="verificarRespuesta(this, false, 9)">B) 3.55</li>
+          <li class="option" onclick="verificarRespuesta(this, false, 9)">C) 3.75</li>
+          <li class="option" onclick="verificarRespuesta(this, true, 9)">D) 3.65</li>
+        </ul>
+      </div>
+  
+      <!-- Problema 10 -->
+      <div class="problem" id="problem10">
+        <p>Problema de quinto grado 10: Calcula el resultado de la siguiente operación con decimales:</p>
+        <p>(2.5 * 4) + 1.8</p>
+        <button onclick="mostrarEjemplo('Ejemplo: Aplicar la jerarquía de operaciones')">
+          Ver Ejemplo
+        </button>
+        <ul class="options" id="options10">
+          <li class="option" onclick="verificarRespuesta(this, false, 10)">A) 11.4</li>
+          <li class="option" onclick="verificarRespuesta(this, false, 10)">B) 10.8</li>
+          <li class="option" onclick="verificarRespuesta(this, true, 10)">C) 11.8</li>
+          <li class="option" onclick="verificarRespuesta(this, false, 10)">D) 12.8</li>
+        </ul>
+      </div>
+      <div id="calificacion" style="display: none;">
+        <h2>Calificación: <span id="puntuacion"></span></h2>
+      </div>
+          </div>
+
+  <script>
+function mostrarEjemplo(ejemplo) {
+    alert(ejemplo);
+  }
+
+  function verificarRespuesta(element, esCorrecta) {
+    // Restaurar el color de todas las opciones
+    var opciones = element.parentNode.getElementsByTagName("li");
+    for (var i = 0; i < opciones.length; i++) {
+      opciones[i].classList.remove("correct", "incorrect");
+    }
+
+    // Colorear la opción seleccionada
+    if (esCorrecta) {
+      element.classList.add("correct");
+    } else {
+      element.classList.add("incorrect");
+    }
+  }
+
+  document.getElementById('reiniciarBtn').addEventListener('click', function() {
+    // Recargar la página
+    location.reload();
+  });
+
+
+
+    let respuestasSeleccionadas = Array.from({ length: 10 }, () => null);
+    let calificacion = 0;
+
+    function reiniciar() {
+      respuestasSeleccionadas = Array.from({ length: 10 }, () => null);
+      calificacion = 0;
+      mostrarPregunta(1);
+      document.getElementById('calificacion').style.display = 'none';
+      document.getElementById('reiniciarBtn').style.display = 'none';
+    }
+
+    function verificarRespuesta(element, esCorrecta, numeroPregunta) {
+      const index = numeroPregunta - 1;
+
+      if (respuestasSeleccionadas[index] !== null) {
+        // El usuario ya seleccionó una respuesta, no hacer nada
+        return;
+      }
+
+      respuestasSeleccionadas[index] = esCorrecta;
+
+      if (esCorrecta) {
+        calificacion += 1;
+        element.style.backgroundColor = 'green';
+      } else {
+        element.style.backgroundColor = 'red';
+      }
+
+      // Verificar si todas las preguntas fueron respondidas
+      if (respuestasSeleccionadas.every((respuesta) => respuesta !== null)) {
+        mostrarCalificacion();
+      } else {
+        mostrarPregunta(numeroPregunta + 1);
+      }
+    }
+
+    function mostrarCalificacion() {
+      const puntuacionFinal = (calificacion / 10) * 10;
+      document.getElementById('puntuacion').innerText = puntuacionFinal.toFixed(2);
+      document.getElementById('calificacion').style.display = 'block';
+      document.getElementById('reiniciarBtn').style.display = 'block';
+    }
+
+    mostrarPregunta(1);
+  </script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #3498db;
+    box-sizing: border-box;
+
+  }
+  .tito{
+    color: #ffffff;
+
+  }
+  .centrado{
+    text-align: center;
+  }
+  .container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+  }
+
+  .problem {
+    border: 1px solid #37f288;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+
+  .options {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .option {
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid #ca56ff;
+    border-radius: 5px;
+  }
+
+  .correct {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  .incorrect {
+    background-color: #FF5733;
+    color: white;
+  }
+
+
+  body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .centrado {
+    text-align: center;
+  }
+  
+  .boton-lujoso {
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none; /* Elimina la línea subrayada */
+    border-radius: 5px;
+    background-color: #be55ff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .boton-lujoso:hover {
+    background-color: #ff07fb;
+  }
+  
+  .fa-bed {
+    margin-right: 8px;
+  }
+
+    /* Estilos para mejorar la responsividad en dispositivos móviles */
+    @media screen and (max-width: 600px) {
+      .boton-lujoso {
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+      }
+    }
+
+  
